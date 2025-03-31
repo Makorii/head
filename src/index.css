@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Interstate';
+  src: url('/fonts/interstate-regular-comp-58b641cc0aca1.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Interstate', sans-serif !important;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.fa-whatsapp {
+  background-color: #25D366;
+  margin-left: 10px;
+}
