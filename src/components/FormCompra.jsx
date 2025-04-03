@@ -56,16 +56,17 @@ export default function FormCompra() {
     return (
         <Container
             sx={{
-                width: "100%",
+                maxWidth: "100% !important",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 flex: 1,
-                padding: "0"
+                padding: "0 !important",
             }}
         >
             <Container
                 sx={{
+                    maxWidth: "100% !important",
                     backgroundColor: "#000",
                     borderRadius: "0 0 20px 20px",
                     paddingTop: "20px",
@@ -84,15 +85,18 @@ export default function FormCompra() {
                     ACTIVA TU CÓDIGO MÁGICO CON HEAD
                 </Typography>
             </Container>
-            <Container>
+            <Container sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                }}
+            >
                 <Typography
-                    variant="body2"
+                    variant="body1"
                     textAlign="center"
                     sx={{ padding: "10px 0", width: { sm: "70%", md: "50%" } }}
                 >
-                    Con tu "Código Mágico", cada compra puede sorprenderte.
-                    Sigue los siguientes pasos y descubre si eres uno de los
-                    ganadores.
+                    Tu “Código Mágico” puede convertir cada compra en una experiencia única. Completa los datos y descubre si tienes premio.
                 </Typography>
                 <MiStepper />
                 <FormControl

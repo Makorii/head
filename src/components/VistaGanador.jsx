@@ -13,6 +13,8 @@ import CardMedia from "@mui/material/CardMedia";
 import { useLocation } from "react-router";
 import { useWindowSize } from "react-use";
 import Confetti from "react-confetti";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 export default function VistaGanador() {
     const { width, height } = useWindowSize();
@@ -40,7 +42,7 @@ export default function VistaGanador() {
                 textAlign="center"
                 sx={{ fontSize: "32px", fontWeight: "600" }}
             >
-                ¡ERES UN GANADOR!
+                ¡HAS GANADO!
             </Typography>
             <Card sx={{ padding: "10px 0", minWidth: "342px" }}>
                 <CardMedia
@@ -59,7 +61,7 @@ export default function VistaGanador() {
                 </CardContent>
             </Card>
             <Typography textAlign="center" variant="body2">
-                Retira tu premio siguiendo los siguientes pasos
+            Sigue estos pasos para reclamar tu premio:
             </Typography>
             <List>
                 <ListItem
@@ -71,7 +73,7 @@ export default function VistaGanador() {
                         },
                     }}
                 >
-                    <ListItemText primary="Dirígete a la tienda HEAD más cercana." />
+                    <ListItemText primary="Visita la tienda HEAD más cercana." />
                 </ListItem>
                 <ListItem
                     sx={{
@@ -82,7 +84,7 @@ export default function VistaGanador() {
                         },
                     }}
                 >
-                    <ListItemText primary="Presenta tu tarjeta de código mágico" />
+                    <ListItemText primary="Presenta tu código mágico." />
                 </ListItem>
                 <ListItem
                     sx={{
@@ -93,7 +95,7 @@ export default function VistaGanador() {
                         },
                     }}
                 >
-                    <ListItemText primary="¡Lleva tu juego al siguiente nivel!" />
+                    <ListItemText primary="¡Disfruta de tu premio y sigue superándote!" />
                 </ListItem>
             </List>
             <Button
@@ -111,11 +113,10 @@ export default function VistaGanador() {
                 textAlign="center"
                 sx={{ fontSize: "32px", fontWeight: "600" }}
             >
-                Gracias por confiar en HEAD y ser parte de esta experiencia.
+                Gracias por elegir HEAD y formar parte de esta experiencia.
             </Typography>
             <Typography textAlign="center" variant="body2">
-                Sigue explorando nuestra colección y descubre más sorpresas en
-                cada compra.
+            Explora nuestra colección y descubre más sorpresas en cada compra.
             </Typography>
             <Button
                 variant="outlined"
@@ -127,9 +128,10 @@ export default function VistaGanador() {
                     fontWeight: "600",
                     minWidth: "342px",
                     margin: "24px 0",
+                    fontSize: "16px",
                 }}
             >
-                Visitar la tienda 🛒
+                Visitar la tienda <FontAwesomeIcon icon={faCartShopping} />
             </Button>
         </Container>
     );

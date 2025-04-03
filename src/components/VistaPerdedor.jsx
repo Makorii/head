@@ -10,6 +10,8 @@ import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 export default function VistaPerdedor() {
     return (
@@ -27,7 +29,7 @@ export default function VistaPerdedor() {
                 textAlign="center"
                 sx={{ fontSize: "32px", fontWeight: "600" }}
             >
-                Gracias por participar
+                Esta vez tu “Código Mágico” no resultó ganador, pero HEAD tiene un regalo especial para ti
             </Typography>
             <Card sx={{ padding: "10px 0", minWidth: "342px" }}>
                 <CardMedia
@@ -103,11 +105,10 @@ export default function VistaPerdedor() {
                 textAlign="center"
                 sx={{ fontSize: "32px", fontWeight: "600" }}
             >
-                Gracias por confiar en HEAD y ser parte de esta experiencia.
+                Gracias por ser parte de HEAD.
             </Typography>
             <Typography textAlign="center" variant="body2">
-                Sigue explorando nuestra colección y descubre más sorpresas en
-                cada compra.
+            Sigue explorando nuestra colección y encuentra nuevas sorpresas en cada compra.
             </Typography>
             <Button
                 variant="outlined"
@@ -119,9 +120,10 @@ export default function VistaPerdedor() {
                     fontWeight: "600",
                     minWidth: "342px",
                     margin: "24px 0",
+                    fontSize: "16px",
                 }}
             >
-                Visitar la tienda 🛒
+                Visitar la tienda <FontAwesomeIcon icon={faCartShopping} />
             </Button>
         </Container>
     );

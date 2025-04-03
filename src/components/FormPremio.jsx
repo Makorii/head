@@ -72,16 +72,17 @@ export default function FormPremio() {
     return (
         <Container
             sx={{
-                width: "100%",
+                maxWidth: "100% !important",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 flex: 1,
-                padding: "0",
+                padding: "0 !important",
             }}
         >
             <Container
                 sx={{
+                    maxWidth: "100% !important",
                     backgroundColor: "#000",
                     borderRadius: "0 0 20px 20px",
                     paddingTop: "20px",
@@ -112,8 +113,7 @@ export default function FormPremio() {
                     textAlign="center"
                     sx={{ padding: "10px 0", width: { sm: "70%", md: "50%" } }}
                 >
-                    Introduce tu código único en el campo de abajo y descubre si
-                    la magia está de tu lado.
+                    Aquí tienes tu código único. Usa este número para descubrir si tienes un premio.
                 </Typography>
                 <MiStepper />
                 <Typography
@@ -146,7 +146,7 @@ export default function FormPremio() {
                         width: "342px",
                         padding: "8px 0",
                         fontSize: "16px",
-                        borderRadius: "16px"
+                        borderRadius: "16px",
                     }}
                 >
                     DESCUBRIR MI PREMIO

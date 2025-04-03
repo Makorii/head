@@ -78,16 +78,17 @@ export default function FormRegistro() {
     return (
         <Container
             sx={{
-                width: "100%",
+                maxWidth: "100% !important",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 flex: 1,
-                padding: "0",
+                padding: "0 !important",
             }}
         >
             <Container
                 sx={{
+                    maxWidth: "100% !important",
                     backgroundColor: "#000",
                     borderRadius: "0 0 20px 20px",
                     paddingTop: "20px",
@@ -118,9 +119,7 @@ export default function FormRegistro() {
                     variant="body1"
                     sx={{ padding: "10px 0", width: { sm: "70%", md: "50%" } }}
                 >
-                    Cada compra puede ser una victoria. Sigue los siguientes
-                    pasos y descubre si eres uno de los ganadores de increíbles
-                    premios.
+                    Cada compra con HEAD puede traer una sorpresa. Sigue estos pasos y averigua si eres uno de los afortunados ganadores.
                 </Typography>
                 <MiStepper />
                 <FormControl
